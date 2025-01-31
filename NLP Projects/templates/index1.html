@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Malla Reddy University Text Generator</h1>
+    <p>Enter a prompt below to generate text:</p>
+    <form action="/generate" method="POST">
+        <label for="prompt">Enter a prompt:</label>
+        <input type="text" id="prompt" name="prompt" required>
+        <button type="submit">Generate</button>
+    </form>
+    <hr>
+    {% if result %}
+    <h2>Generated text:</h2>
+    <p>{{result}}</p>
+    {% endif %}
+
+</body>
+
+</html>
